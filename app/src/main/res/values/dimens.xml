@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_margin">16dp</dimen>
+    <dimen name="main_padding">16dp</dimen>
+    <dimen name="comment_top_margin">20dp</dimen>
+    <dimen name="first_comment_top_margin">10dp</dimen>
+    <dimen name="name_margin_left">30dp</dimen>
+    <dimen name="margin_top_replay">15dp</dimen>
+    <dimen name="margin_top_like">10dp</dimen>
+    <dimen name="margin_top_comment_text">15dp</dimen>
+    <dimen name="comment_text_size">17sp</dimen>
+    <dimen name="notification_text_size">20sp</dimen>
+    <dimen name="name_text_size">18sp</dimen>
+    <dimen name="time_text_size">14sp</dimen>
+    <dimen name="replay_text_size">10sp</dimen>
+
+</resources>

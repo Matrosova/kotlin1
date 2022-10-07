@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf = "parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/main_margin"
+            android:src="@drawable/back"
+            android:background="null"/>
+
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Notification"
+            android:textSize="@dimen/notification_text_size"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/main_margin"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/search"
+            android:layout_marginEnd="@dimen/main_margin"
+            android:background="null"
+          />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/topPanel"
+        android:layout_marginHorizontal="@dimen/main_margin"
+        android:padding="@dimen/main_padding"
+        android:background="@color/lightess_grey"
+        android:id="@+id/first"
+        android:layout_marginTop="@dimen/first_comment_top_margin"
+        >
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/Avatar1"
+            android:background="null"
+            android:id="@+id/ava"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ava"
+            android:layout_marginLeft="@dimen/name_margin_left"
+            android:text="@string/name1"
+            android:textSize="@dimen/name_text_size"
+            android:id="@+id/Roman"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/ava"
+            android:layout_marginLeft="@dimen/name_margin_left"
+            app:layout_constraintTop_toBottomOf="@+id/Roman"
+            android:text="@string/time1"
+            android:textSize="@dimen/time_text_size"
+            android:textColor="@color/light_grey"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_comment_text"
+            android:textSize="@dimen/comment_text_size"
+            android:id="@+id/check"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ava"
+            android:text="@string/text1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/check"
+            android:text="@string/replay"
+            android:textSize="@dimen/replay_text_size"
+            android:layout_marginTop="@dimen/margin_top_replay"
+            android:textColor="@color/blue"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            />
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/thumb"
+            android:background="null"
+            app:layout_constraintTop_toBottomOf="@id/check"
+            app:layout_constraintRight_toRightOf="@id/first"
+            android:layout_marginTop="@dimen/margin_top_like"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/first"
+        android:layout_marginHorizontal="@dimen/main_margin"
+        android:padding="@dimen/main_padding"
+        android:background="@color/lightess_grey"
+        android:id="@+id/second"
+        android:layout_marginTop="@dimen/comment_top_margin"
+        >
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ava2"
+            android:background="null"
+            android:id="@+id/ava2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ava2"
+            android:layout_marginLeft="@dimen/name_margin_left"
+            android:text="@string/name2"
+            android:textSize="@dimen/name_text_size"
+            android:id="@+id/Tina"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/ava2"
+            android:layout_marginLeft="@dimen/name_margin_left"
+            app:layout_constraintTop_toBottomOf="@+id/Tina"
+            android:text="@string/time2"
+            android:textSize="@dimen/time_text_size"
+            android:textColor="@color/light_grey"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_comment_text"
+            android:textSize="@dimen/comment_text_size"
+            android:id="@+id/into"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ava2"
+            android:text="@string/text2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/into"
+            android:text="117 REPLAYS"
+            android:textSize="@dimen/replay_text_size"
+            android:layout_marginTop="@dimen/margin_top_replay"
+            android:textColor="@color/blue"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            />
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/thumb"
+            android:background="null"
+            app:layout_constraintTop_toBottomOf="@id/into"
+            app:layout_constraintRight_toRightOf="@id/second"
+            android:layout_marginTop="@dimen/margin_top_like"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/second"
+        android:layout_marginHorizontal="@dimen/main_margin"
+        android:padding="@dimen/main_padding"
+        android:background="@color/lightess_grey"
+        android:id="@+id/third"
+        android:layout_marginTop="@dimen/comment_top_margin"
+        >
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ava3"
+            android:background="null"
+            android:id="@+id/ava3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ava3"
+            android:layout_marginLeft="@dimen/name_margin_left"
+            android:text="@string/name3"
+            android:textSize="@dimen/name_text_size"
+            android:id="@+id/Tomek"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/ava3"
+            android:layout_marginLeft="@dimen/name_margin_left"
+            app:layout_constraintTop_toBottomOf="@+id/Tomek"
+            android:text="@string/time3"
+            android:textSize="@dimen/time_text_size"
+            android:textColor="@color/light_grey"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_comment_text"
+            android:textSize="@dimen/comment_text_size"
+            android:id="@+id/into2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ava3"
+            android:text="@string/text2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/into2"
+            android:text="117 REPLAYS"
+            android:textSize="@dimen/replay_text_size"
+            android:layout_marginTop="@dimen/margin_top_replay"
+            android:textColor="@color/blue"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            />
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/thumb"
+            android:background="null"
+            app:layout_constraintTop_toBottomOf="@id/into2"
+            app:layout_constraintRight_toRightOf="@id/third"
+            android:layout_marginTop="@dimen/margin_top_like"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf = "parent"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="null"
+            android:src="@drawable/shopping" />
+
+        <ImageButton
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:src="@drawable/bookopenvariant"
+            android:background="null"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:src="@drawable/cart"
+            android:background="null"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:src="@drawable/tagheart"
+            android:background="null"
+            android:layout_weight="1"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            >
+            <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/heartfilled"
+                android:background="null"
+
+
+                />
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account"
+                android:textColor="@color/blue"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
